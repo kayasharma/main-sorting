@@ -5,7 +5,7 @@ import os
 import time
 
 # Create Flask application instance
-app = Flask(__name__, static_folder='../frontend', static_url_path='')
+app = Flask(__name__, static_folder='frontend', static_url_path='')
 CORS(app)
 socketio = SocketIO(app)
 
