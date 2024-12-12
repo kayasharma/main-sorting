@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Algorithms Visualizer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <label for="numElements">Number of Elements:</label>
+          <input type="number" id="numElements" min="1" max="100" value="5" />
+          <button id="generateInputFields">Set Length</button>
+        </li>
+        <li>
+          <textarea
+            id="elementsInput"
+            placeholder="Enter elements separated by commas"
+            style="display: none"
+          ></textarea>
+        </li>
+        <li><button id="sortButton" style="display: none">Sort</button></li>
+        <li><button id="resetButton">Reset</button></li>
+        <li>
+          <label>Select Algorithms:</label><br />
+         
+          <input type="checkbox" id="bubble" value="bubble"> Bubble Sort</input><br />
+          <input type="checkbox" id="insertion" value="insertion"> Insertion Sort</input><br />
+          <input type="checkbox" id="quicksort" value="quicksort"> QuickSort</input><br />
+          <input type="checkbox" id="merge" value="merge"> Merge Sort</input><br />
+          <input type="checkbox" id="heap" value="heap"> Heap Sort</input><br />
+          <input type="checkbox" id="radix" value="radix"> Radix Sort</input><br />
+          <input type="checkbox" id="bucket" value="bucket"> Bucket Sort</input><br />
+          <input type="checkbox" id="counting" value="counting"> Counting Sort</input><br />
+        </li>
+      </ul>
+    </nav>
+    <h1>Sorting Algorithms Visualizer</h1>
+    <div id="arrayContainer"></div>
+    <div id="visualizationContainer"></div> <!-- Container for algorithm visualizations -->
+    <div id="timeComplexity"></div>
+    <button id="compareButton">Compare</button>
+    <div id="chartContainer"></div> <!-- Ensure this container exists for the chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+    <script src="scripts.js"></script>
+  </body>
+</html>

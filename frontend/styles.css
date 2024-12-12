@@ -1,0 +1,116 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+nav {
+  width: 100%;
+  background-color: #007bff;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+h1 {
+  color: #ff69b4;
+}
+
+#controls {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+label,
+input,
+textarea,
+select {
+  margin: 5px;
+  padding: 5px;
+}
+
+textarea {
+  width: 300px;
+  height: 100px;
+  resize: none;
+}
+
+#arrayContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.bubble {
+  margin: 5px;
+  background-color: #4caf50;
+  color: white;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  align-items: flex-end;
+  text-align: center;
+  margin: 0 2px;
+}
+
+.bubble.highlight {
+  background-color: yellow;
+}
+
+.bubble.swap {
+  background-color: red;
+}
+
+#originalDataContainer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  width: 80%;
+  text-align: center;
+  font-size: 16px;
+}
+
+#chartContainer {
+  margin-top: 30px;
+}
+
+#visualizationContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
